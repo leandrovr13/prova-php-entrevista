@@ -1,5 +1,5 @@
 INSERT INTO users(name, email)
     VALUES
-        ('Foo Bar', 'foo@bar'),
-        ('Bar Baz', 'bar@baz'),
-        ('Baz Foo', 'baz@foo')
+        ('Carlos', 'carlos@email.com.br'),
+        ('Luana', 'luana@email.com.br'),
+        ('Edgar', 'edgar@email.com.br')

@@ -1,6 +1,6 @@
 # Teste de PHP
 ##### Objetivo
-Criar um sistema simples, totalmente desenvolvido em PHP, sem a utilização de nenhum framework, onde será possível Criar/Editar/Excluir/Listar usuários. O sistema também deve possuir a possibilidade de vincular/desvincular várias cores ao usuário.
+Criar um sistema simples, totalmente desenvolvido em PHP, sem a utilização de nenhum framework, onde será possível Criar/Editar/Excluir/Listar usuários. O sistema também deve possuir a possibilidade de associar um perfil (role) ao usuário.
 
 ##### Estrutura de banco de dados
 A seguinte estrutura será utilizada para persistência dos dados, podendo ser alterada a qualquer momento para melhor estrutura do sistema:
@@ -12,9 +12,9 @@ A seguinte estrutura será utilizada para persistência dos dados, podendo ser a
         email   varchar(100) not null
 ```
 ```sql
-    tbela: colors
+    tbela: roles
         id      int not null auto_increment primary key
-        name    varchar(50) not null
+        role    varchar(50) not null
 ```
 
 ##### Start
