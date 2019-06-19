@@ -1,24 +1,45 @@
 # Teste de PHP
 ##### Objetivo
-Criar um sistema simples, totalmente desenvolvido em PHP, sem a utilização de nenhum framework, onde será possível Criar/Editar/Excluir/Listar usuários. O sistema também deve possuir a possibilidade de associar um perfil (role) ao usuário.
+Este é um teste simples para que possamos avaliar a capacidade do desenvolvedor em escrever códigos aplicando boas práticas de programação e cuidados com a experiência do usuário.
 
-##### Estrutura de banco de dados
-A seguinte estrutura será utilizada para persistência dos dados, podendo ser alterada a qualquer momento para melhor estrutura do sistema:
+##### O teste
 
-```sql
-    tabela: users
-        id      int not null auto_increment primary key
-        name    varchar(100) not null
-        email   varchar(100) not null
-```
-```sql
-    tbela: roles
-        id      int not null auto_increment primary key
-        role    varchar(50) not null
-```
+Deverá ser criado um sistema simples, totalmente desenvolvido em PHP, onde será possível Criar/Editar/Excluir/Listar usuários. O sistema também deve possuir a possibilidade de associar um perfil (role) ao usuário.
 
-##### Start
-Para início das atividades, use como base o arquivo `connection.php`, este é apenas um arquivo exemplo onde é aberta conexão com o banco de dados e lista os usuários do banco.
+Seguem os atributos para cada entidade:
 
-##### Boa Sorte
-Use seu conhecimento, consulte a documentação e o google, caso ainda houver dúvidas, nos pergunte :D. Boa sorte!
+#####  -> Usuário
+
+- Nome;
+- E-mail;
+- Telefone;
+- Data de Nascimento;
+- Cargo;
+- Salário;
+- Foto;
+
+#####  -> Perfil
+- Nome do perfil
+- Descrição
+
+A foto será um upload na parte de cadastro de usuário, que aparecerá na tela de cadastro/edição, e na listagem a foto deverá ser  exibida;
+
+
+##### Premissas
+
+1 - Dever ter alguma alguma dependência via composer;
+
+2 - Passar no php code sniffer com PSR-2: Coding Style Guide;
+
+3 - Teste unitário de pelo menos 3 funções;
+
+4 - Deploy em um repositório do github ou do bitbucket.
+
+
+##### Flexibilidade
+Você poderá utilizar qualquer framework para desenvolver o projeto, lembrando que a arquitetura utilizada, você deverá defendê-la pessoalmente na nossa entrevista (caso passe no teste).
+
+##### Prazo
+O deadline será até  24/06 (Segunda-feira), e qualquer dúvida pode enviar diretamente para o e-mail leandro(a)constance.com.br
+
+
